@@ -457,3 +457,101 @@ footer h3 {
 .hamburger-menu:has(input:checked)~.header-nav {
     translate: 0 0;
 }
+
+
+/* Different screen sizes */
+
+@media (max-height: 500px) {
+    #home {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-img {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .menu-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .food-types-container {
+        flex-direction: column;
+    }
+
+    .food-type {
+        width: 100%;
+        margin: 0 0 48px;
+        height: auto;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+    }
+
+    .review-box {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-img {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 30px;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 60px 0 0 15px;
+        background-color: white;
+        min-height: 100vh;
+        width: 200px;
+        translate: -100% 0;
+        transition: translate 0.3s ease-in-out;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 535px) {
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .item-description {
+        text-align: center;
+    }
+}
